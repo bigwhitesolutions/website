@@ -9,7 +9,7 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `shaunpearson.dev`,
+    siteTitleAlt: `bigwhitesolutions.com`,
   },
   plugins: [
     {
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Shaun Pearson`,
+        name: `Big White Solutions`,
         short_name: `Shaun`,
         description: `Company Website`,
         start_url: `/`,
