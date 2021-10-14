@@ -1,0 +1,12 @@
+name = "worker-typescript-template"
+type = "javascript"
+zone_id = "276e86ee920d3fabe156940429bd8f80"
+account_id = "53ca29d6e91af4cbcb034ffc8ced93b1"
+route = "*bigwhitesolutions.com/*"
+workers_dev = true
+compatibility_date = "2021-10-14"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
