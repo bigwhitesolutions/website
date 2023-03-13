@@ -4,11 +4,11 @@
   "description": "Company Website",
   "version": "0.2.9",
   "author": "Shaun Pearson<shaun@bigwhitesolutions.com>",
-  "license": "0BSD",
+  "license": "BSD",
   "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --host=0.0.0.0",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
@@ -20,16 +20,11 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "@lekoarts/gatsby-theme-cara": "2.0.4",
-    "gatsby": "3.13.1",
-    "gatsby-plugin-gatsby-cloud": "3.1.0",
-    "gatsby-plugin-google-analytics": "3.13.0",
-    "gatsby-plugin-manifest": "3.13.0",
-    "gatsby-plugin-netlify": "3.14.0",
-    "gatsby-plugin-offline": "4.13.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.25",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@lekoarts/gatsby-theme-cara": "^5.1.0",
+    "gatsby": "^5.7.0",
+    "gatsby-plugin-manifest": "^5.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "cross-env": "7.0.3"
