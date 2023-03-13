@@ -1,9 +1,11 @@
 import * as React from "react"
+import type { HeadFC } from "gatsby"
 import { Parallax } from "@react-spring/parallax"
 import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout"
 import Hero from "@lekoarts/gatsby-theme-cara/src/components/hero"
 import Projects from "@lekoarts/gatsby-theme-cara/src/components/projects"
 import Contact from "@lekoarts/gatsby-theme-cara/src/components/contact"
+import Seo from "@lekoarts/gatsby-theme-cara/src/components/seo"
 
 const Cara = () => (
   <Layout>
@@ -16,3 +18,5 @@ const Cara = () => (
 )
 
 export default Cara
+
+export const Head: HeadFC = () => <Seo />

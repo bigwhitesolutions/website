@@ -1,8 +1,7 @@
-require(`dotenv`).config({
-  path: `.env`,
-})
+import type { GatsbyConfig, PluginRef } from "gatsby"
+import "dotenv/config"
 
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
@@ -16,12 +15,15 @@ module.exports = {
     siteImage: `/banner.jpg`,
     siteDescription: `Company Website`,
   },
+  trailingSlash: `never`,
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
       // See the theme's README for all available options
       options: {},
     },
+    `gatsby-plugin-theme-ui`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,8 +31,6 @@ module.exports = {
         short_name: `Shaun`,
         description: `Company Website`,
         start_url: `/`,
-        background_color: `#141821`,
-        theme_color: `#f6ad55`,
         display: `standalone`,
         icons: [
           {
@@ -46,5 +46,13 @@ module.exports = {
         ],
       },
     },
-  ].filter(Boolean),
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "src/utils/typography.js"
+      }
+    },
+
+  ].filter(Boolean) as Array<PluginRef>,
 }
+export default config
