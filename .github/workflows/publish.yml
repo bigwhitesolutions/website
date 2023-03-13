@@ -39,5 +39,5 @@ jobs:
           directory: public
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ./shaun-pearson.dev
+          workingDirectory: ./shaun-pearson.dev
 
