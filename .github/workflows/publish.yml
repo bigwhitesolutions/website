@@ -32,6 +32,7 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
+        working-directory: ./shaun-pearson.dev
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 53ca29d6e91af4cbcb034ffc8ced93b1
@@ -39,4 +40,3 @@ jobs:
           directory: public
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          working-directory: ./shaun-pearson.dev
