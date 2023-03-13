@@ -18,7 +18,6 @@ jobs:
         run: gatsby build
 
       - name: Publish to Cloudflare Pages
-        working-directory: ./shaun-pearson.dev
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -27,3 +26,4 @@ jobs:
           directory: public
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          working-directory: ./shaun-pearson.dev
