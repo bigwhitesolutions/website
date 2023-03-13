@@ -1,0 +1,27 @@
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Run a build step here if your project requires
+
+      - name: Build
+        working-directory: ./shaun-pearson.dev
+        run: gatsby build
+
+      - name: Publish to Cloudflare Pages
+        working-directory: ./shaun-pearson.dev
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 53ca29d6e91af4cbcb034ffc8ced93b1
+          projectName: bigwhitesolutions
+          directory: public
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
