@@ -8,6 +8,13 @@ module.exports = {
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
     siteTitleAlt: `bigwhitesolutions.com`,
+    siteHeadline: `Big White Solutions`,
+    siteUrl: `https://bigwhitesolutions.com`,
+    siteTitle: `Big White Solutions`,
+    author: '@shaunpearsondev',
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    siteDescription: `Company Website`,
   },
   plugins: [
     {
