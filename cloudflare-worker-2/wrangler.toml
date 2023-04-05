@@ -1,0 +1,26 @@
+name = "cloudflare-worker-2"
+main = "src/index.ts"
+compatibility_date = "2023-04-05"
+
+[build.upload]
+format = "service-worker"
+
+[env.1]
+zone_id = "276e86ee920d3fabe156940429bd8f80"
+route = "*bigwhitesolutions.com/*"
+
+[env.2]
+zone_id = "9c2b45e633adad38e46907fa6d0cf53f"
+route = "*bigwhitesolution.com/*"
+
+[env.3]
+zone_id = "eb658a482a5464e2a0be340d8ac1286e"
+route = "*bigwhitesolution.co.uk/*"
+
+[env.4]
+zone_id = "1b3ed4bdfb6bec13d6adb24fa28d3e20"
+route = "*bigwhitesolutions.co.uk/*"
+
+[env.5]
+zone_id = "74558b117caa7c1b3ead1c842b6e4a4b"
+route = "*shaunpearson.dev/*"
