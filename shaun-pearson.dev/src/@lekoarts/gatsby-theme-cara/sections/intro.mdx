@@ -1,2 +1,15 @@
-# Big White Solutions
-A software consultancy company that specialises in Microsoft technologies and Azure
+import whiteImageUrl from '../../../images/logo_white.svg';
+import blackImageUrl from '../../../images/logo_black.svg';
+import { useColorMode } from 'theme-ui';
+
+export default (props) => {
+  const [colorMode, setColorMode] = useColorMode()
+  return (
+    <>
+        <img src={colorMode == 'light' ? blackImageUrl : whiteImageUrl} alt="Big White Solutions" />
+        <p style={{textAlign: "center"}}>A software consultancy company that specialises in Microsoft technologies and Azure</p>
+    </>
+  )
+}
+
+
