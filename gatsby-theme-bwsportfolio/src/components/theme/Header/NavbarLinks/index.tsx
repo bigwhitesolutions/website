@@ -1,11 +1,10 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Wrapper } from './styles'
 
 export default ({ desktop }: { desktop:boolean}) => (
 	<Wrapper desktop={desktop}>
-		<AnchorLink href="#about">About</AnchorLink>
-		<AnchorLink href="#projects">Projects</AnchorLink>
-		<AnchorLink href="#contact">Contact</AnchorLink>
+		<a href="#about">About</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
 	</Wrapper>
 )

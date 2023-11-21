@@ -5,6 +5,14 @@ import Card from "../../../components/common/Card";
 import starIcon from "../../../assets/icons/star.svg";
 import forkIcon from "../../../assets/icons/fork.svg"
 import { Wrapper, Content, Stats } from "./styles";
+import { Flex, Item } from "react-flex-ready";
+
+interface Props {
+  description?: string
+  lang?: string
+  meta?: []
+  title: string
+}
 
 export default () => {
   const {

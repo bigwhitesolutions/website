@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
 	width: 100%;
 `
 
-export const Overlay = styled.div`
+export const Overlay = styled.div<{sidebar: boolean}>`
 	position: fixed;
 	background: rgba(0, 0, 0, 0.7);
 	width: 100%;

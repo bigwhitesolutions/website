@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{sidebar: boolean}>`
 	z-index: 5;
 	top: 1.6rem;
 	right: 1.8rem;
@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
 	`}
 `
 
-export const Bar = styled.div`
+export const Bar = styled.div<{sidebar: boolean, top?: boolean | undefined, mid?: boolean| undefined, bottom?: boolean| undefined }>`
 	width: 1.6rem;
 	height: .15rem;
 	margin-bottom: .3rem;

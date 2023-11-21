@@ -11,6 +11,11 @@ const config: GatsbyConfig = {
   plugins: [
     {
       resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `/assets/icons`
+        }
+      }
     },
     {
       resolve: 'gatsby-plugin-styled-components',
