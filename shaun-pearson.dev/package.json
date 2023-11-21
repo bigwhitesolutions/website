@@ -5,7 +5,7 @@
   "version": "0.2.9",
   "author": "Shaun Pearson<shaun@bigwhitesolutions.com>",
   "license": "BSD",
-  "starter-name": "gatsby-starter-portfolio-cara",
+  "starter-name": "gatsby-theme-bwsportfolio",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop --host=0.0.0.0",
@@ -21,6 +21,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@lekoarts/gatsby-theme-cara": "^5.1.4",
+    "gatsby-theme-bwsportfolio" : "*",
     "gatsby": "^5.12.10",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-theme-ui": "^0.15.5",

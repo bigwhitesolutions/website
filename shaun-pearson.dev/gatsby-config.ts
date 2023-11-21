@@ -23,29 +23,34 @@ const config: GatsbyConfig = {
       options: {},
     },
     `gatsby-plugin-theme-ui`,
-
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-theme-portfolio",
       options: {
-        name: `Big White Solutions`,
-        short_name: `Shaun`,
-        description: `Company Website`,
-        start_url: `/`,
-        display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
-      },
+        contentPath: `${__dirname}/content` // the path to your markdown files
+      }
     },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `Big White Solutions`,
+    //     short_name: `Shaun`,
+    //     description: `Company Website`,
+    //     start_url: `/`,
+    //     display: `standalone`,
+    //     icons: [
+    //       {
+    //         src: `/android-chrome-192x192.png`,
+    //         sizes: `192x192`,
+    //         type: `image/png`,
+    //       },
+    //       {
+    //         src: `/android-chrome-512x512.png`,
+    //         sizes: `512x512`,
+    //         type: `image/png`,
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-typography",
       options: {

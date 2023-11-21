@@ -4,12 +4,9 @@
       "lerna": "lerna",
       "start": "lerna run start --stream"
     },
-    "workspaces": [
-      "gatsby-theme-bwsportfolio",
-      "shaun-pearson.dev"
-    ],
     "devDependencies": {
       "lerna": "7.4.2"
     },
+    "workspaces": [ "gatsby-theme-bwsportfolio", "shaun-pearson.dev" ],
     "name": "theme-linker"
   }
