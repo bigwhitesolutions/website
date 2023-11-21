@@ -3,8 +3,8 @@
   "name": "bigwhitesolutions.com",
   "description": "Company Website",
   "version": "0.2.9",
-  "author": "Shaun Pearson<shaun@bigwhitesolutions.com>",
-  "license": "BSD",
+  "author": "Shaun Pearson <shaun@bigwhitesolutions.com>",
+  "license": "BSD-2-Clause",
   "starter-name": "gatsby-theme-bwsportfolio",
   "scripts": {
     "build": "gatsby build",
@@ -21,11 +21,11 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@lekoarts/gatsby-theme-cara": "^5.1.4",
-    "gatsby-theme-bwsportfolio" : "*",
     "gatsby": "^5.12.10",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-theme-ui": "^0.15.5",
     "gatsby-plugin-typography": "^5.12.0",
+    "gatsby-theme-bwsportfolio": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-typography": "^0.16.23",
@@ -34,5 +34,6 @@
   "devDependencies": {
     "cross-env": "7.0.3",
     "typescript": "^5.3.2"
-  }
+  },
+  "main": "index.js"
 }

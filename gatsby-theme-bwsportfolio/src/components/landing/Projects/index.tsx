@@ -1,59 +1,52 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Container from "../../../components/common/Container";
-import Card from "../../../components/common/Card";
-import starIcon from "../../../assets/icons/star.svg";
-import forkIcon from "../../../assets/icons/fork.svg"
-import { Wrapper, Content, Stats } from "./styles";
-import { Flex, Item } from "react-flex-ready";
-
-interface Props {
-  description?: string
-  lang?: string
-  meta?: []
-  title: string
-}
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Container from '../../../components/common/Container'
+import Card from '../../../components/common/Card'
+import starIcon from '../../../assets/icons/star.svg'
+import forkIcon from '../../../assets/icons/fork.svg'
+import { Wrapper, Content, Stats } from './styles'
+import { Flex, Item } from 'react-flex-ready'
 
 export default () => {
   const {
     github: {
-      viewer: {
-        repositories: { edges }
-      }
-    }
+      organization: {
+        repositories: { nodes },
+      },
+    },
   } = useStaticQuery(
     graphql`
       {
         github {
-          viewer {
+          organization(login: "bigwhitesolutions") {
             repositories(
               first: 8
+              isLocked: false
+              privacy: PUBLIC
               orderBy: { field: STARGAZERS, direction: DESC }
             ) {
-              edges {
-                node {
-                  id
-                  name
-                  url
-                  description
-                  stargazers {
-                    totalCount
-                  }
-                  forkCount
+              nodes {
+                id
+                name
+                url
+                description
+                stargazers {
+                  totalCount
                 }
+                forkCount
               }
             }
           }
         }
       }
-    `
-  );
+    `,
+  )
   return (
     <Wrapper as={Container} id="projects">
       <h2>Projects</h2>
       <Flex col={4}>
-        {edges.map(
-          ({ node: { id, url, name, description, stargazers, forkCount } }) => (
+        {nodes.map(
+          ({ id, url, name, description, stargazers, forkCount }) => (
             <Item
               key={id}
               col={4}
@@ -80,9 +73,9 @@ export default () => {
                 </Stats>
               </Card>
             </Item>
-          )
+          ),
         )}
       </Flex>
     </Wrapper>
-  );
-};
+  )
+}

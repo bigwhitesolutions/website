@@ -6,34 +6,15 @@ const data = {
   legalName: "John Doe",
   defaultDescription: "I’m John and I’m a Backend & Devops engineer!",
   socialLinks: {
-    twitter: "http://www.twitter.com/smakosh",
-    github: "https://github.com/smakosh",
-    linkedin: "https://www.linkedin.com/in/ismail-ghallou-630149122/",
-    instagram: "https://instagram.com/smakosh19",
-    youtube: "https://www.youtube.com/user/smakoshthegamer",
-    google: "https://plus.google.com/u/0/+IsmailSmakoshGhallou",
-    telegram: "https://t.me/smakosh",
-    stackOverflow: "https://stackoverflow.com/users/story/7396786"
+    github: "https://github.com/bigwhitesolutions",
+    linkedin: "https://www.linkedin.com/in/shaun-p-57163937/",
   },
-  googleAnalyticsID: "UA-88875900-7",
   themeColor: "#6b63ff",
   backgroundColor: "#6b63ff",
-  social: {
-    facebook: "appId",
-    twitter: "@smakosh"
-  },
-  address: {
-    city: "City",
-    region: "Region",
-    country: "Country",
-    zipCode: "ZipCode"
-  },
   contact: {
-    email: "email",
-    phone: "phone number"
+    email: "shaun@bigwhitesolutions.com",
   },
   foundingDate: "2019",
-  recaptcha_key: "6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN"
 };
 
 export default data

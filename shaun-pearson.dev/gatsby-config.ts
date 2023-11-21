@@ -17,16 +17,16 @@ const config: GatsbyConfig = {
   },
   trailingSlash: `never`,
   plugins: [
-    {
-      resolve: `@lekoarts/gatsby-theme-cara`,
-      // See the theme's README for all available options
-      options: {},
-    },
+    // {
+    //   resolve: `@lekoarts/gatsby-theme-cara`,
+    //   // See the theme's README for all available options
+    //   options: {},
+    // },
     `gatsby-plugin-theme-ui`,
     {
-      resolve: "gatsby-theme-portfolio",
+      resolve: "gatsby-theme-bwsportfolio",
       options: {
-        contentPath: `${__dirname}/content` // the path to your markdown files
+        contentPath: `${__dirname}/src/content` // the path to your markdown files
       }
     },
     // {
@@ -51,12 +51,12 @@ const config: GatsbyConfig = {
     //     ],
     //   },
     // },
-    {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: "src/utils/typography.js"
-      }
-    },
+    // {
+    //   resolve: "gatsby-plugin-typography",
+    //   options: {
+    //     pathToConfigModule: "src/utils/typography.js"
+    //   }
+    // },
 
   ].filter(Boolean) as Array<PluginRef>,
 }

@@ -10,18 +10,7 @@ export default () => (
       <Details>
         <h2>{data.defaultTitle}</h2>
         <span>
-          © All rights are reserved | {new Date().getFullYear()} | Made with{" "}
-          <span aria-label="love" role="img">
-            💖
-          </span>{" "}
-          by{" "}
-          <a
-            href="https://smakosh.com/?ref=gatsby-theme-portfolio"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Smakosh
-          </a>
+          © All rights are reserved | {new Date().getFullYear()} 
         </span>
       </Details>
       <Social />

@@ -1,10 +1,9 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import Header from "../../../components/theme/Header";
 import Container from "../../../components/common/Container";
-import Button from "../../../components/common/Button";
 import DevIllustration from "../../../components/illustrations/DevIllustration";
 import { Wrapper, IntroWrapper, Details, Thumbnail } from "./styles";
+import { graphql, useStaticQuery } from "gatsby";
 
 export default () => {
   const {
@@ -27,7 +26,7 @@ export default () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details>
-          <h1>{title}</h1>
+        <h1>{title}</h1>
           <h4>{description}</h4>
           {/* <Button as={AnchorLink} href="#contact">
             {action}
