@@ -1,12 +1,7 @@
-import { merge, ThemeUIStyleObject } from "theme-ui"
+import { merge } from "theme-ui"
 import tailwind from "@theme-ui/preset-tailwind"
 
-declare module "theme-ui" {
-  interface Theme {
-    footer?: ThemeUIStyleObject
-    texts?: ThemeUIStyleObject
-  }
-}
+
 
 const theme = merge(tailwind, {
   config: {
