@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "tokens/colors";
+import colors from "../../../tokens/colors";
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;

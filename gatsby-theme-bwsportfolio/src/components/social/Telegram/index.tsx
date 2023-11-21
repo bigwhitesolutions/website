@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Telegram = ({ color }) => (
+export const Telegram = ({ color }: {color: string | undefined}) => (
   <svg viewBox="0 0 37.8 32.9">
     <path
       fill={color}

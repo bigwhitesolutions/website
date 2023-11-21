@@ -1,6 +1,6 @@
 import React from "react";
 
-export const StackOverflow = ({ color }) => (
+export const StackOverflow = ({ color }: {color: string | undefined}) => (
   <svg viewBox="0 0 120 120">
     <path d="M84.4 93.8V70.6h7.7v30.9H22.6V70.6h7.7v23.2z" fill={color} />
     <path

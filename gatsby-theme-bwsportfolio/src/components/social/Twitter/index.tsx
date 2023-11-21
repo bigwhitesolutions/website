@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Twitter = ({ color }) => (
+export const Twitter = ({ color }: {color: string | undefined}) => (
   <svg width={24} height={24} viewBox="0 0 16 16">
     <path
       fill={color}

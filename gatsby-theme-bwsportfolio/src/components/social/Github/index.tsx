@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Github = ({ color }) => (
+export const Github = ({ color }: {color: string | undefined}) => (
   <svg viewBox="0 0 35.5 34.7">
     <path
       fill={color}

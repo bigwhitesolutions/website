@@ -1,6 +1,5 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import Header from "../../../components/theme/Header";
 import Container from "../../../components/common/Container";
 import Button from "../../../components/common/Button";
@@ -30,9 +29,9 @@ export default () => {
         <Details>
           <h1>{title}</h1>
           <h4>{description}</h4>
-          <Button as={AnchorLink} href="#contact">
+          {/* <Button as={AnchorLink} href="#contact">
             {action}
-          </Button>
+          </Button> */}
         </Details>
         <Thumbnail>
           <DevIllustration />

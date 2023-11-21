@@ -1,14 +1,14 @@
 import React from "react";
-import colors from "tokens/colors";
-import { socialLinks } from "data";
+import colors from  "../../../../tokens/colors";
+import data from "../../../../data";
 import { Links } from "./styles";
-import { Telegram, Github, Twitter, StackOverflow } from "../../../components/social";
+import { Telegram, Github, Twitter, StackOverflow } from "../../../../components/social" //"../../../../components/social";
 
 export default () => (
   <Links>
-    {socialLinks.telegram && (
+    {data.socialLinks.telegram && (
       <a
-        href={socialLinks.telegram}
+        href={data.socialLinks.telegram}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Get in touch with me Telegram"
@@ -16,9 +16,9 @@ export default () => (
         <Telegram color={colors.primary} />
       </a>
     )}
-    {socialLinks.github && (
+    {data.socialLinks.github && (
       <a
-        href={socialLinks.github}
+        href={data.socialLinks.github}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Folow me on GitHub"
@@ -26,9 +26,9 @@ export default () => (
         <Github color={colors.primary} />
       </a>
     )}
-    {socialLinks.twitter && (
+    {data.socialLinks.twitter && (
       <a
-        href={socialLinks.twitter}
+        href={data.socialLinks.twitter}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Follow me on Twitter"
@@ -36,9 +36,9 @@ export default () => (
         <Twitter color={colors.primary} />
       </a>
     )}
-    {socialLinks.stackOverflow && (
+    {data.socialLinks.stackOverflow && (
       <a
-        href={socialLinks.stackOverflow}
+        href={data.socialLinks.stackOverflow}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Follow me on StackOverflow"
