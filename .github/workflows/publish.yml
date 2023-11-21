@@ -21,6 +21,8 @@ jobs:
       - name: Install Project Dependencies
         run: npm ci
         working-directory: ./shaun-pearson.dev
+        env: # Or as an environment variable
+          TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
 
       
       - name: Install Gatsby CLI
