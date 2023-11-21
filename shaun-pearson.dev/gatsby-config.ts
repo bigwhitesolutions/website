@@ -2,6 +2,7 @@ import type { GatsbyConfig, PluginRef } from "gatsby"
 import "dotenv/config"
 
 const config: GatsbyConfig = {
+  jsxRuntime: "automatic",
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
